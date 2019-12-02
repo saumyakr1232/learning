@@ -19,8 +19,12 @@ int gcd(int a, int h)
 int main() 
 { 
 	// Two random prime numbers 
-	double p = 3; 
-	double q = 7; 
+	double p ; 
+	double q ;
+	cout<<"Enter large Prime number  :";
+	cin>>p;
+	cout<<"Enter Prime number less than "<<p<<"  :"; 
+	cin>>q;
 
 	// First part of public key: 
 	double n = p*q; 
@@ -45,10 +49,12 @@ int main()
 	int k = 2; // A constant value 
 	double d = (1 + (k*phi))/e; 
 
+	cout<<"Privat key :"<<d<<", "<<n<<endl;
+	cout<<"Public key :"<<e<<", "<<n<<endl;
 	// Message to be encrypted 
-	double msg = 20; 
-
-	cout<<"Message data "<<msg; 
+	double msg;
+	cout<<"Enter message to encrypt :";
+	cin>>msg;  
 
 	// Encryption c = (msg ^ e) % n 
 	double c = pow(msg, e); 

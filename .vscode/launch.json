@@ -4,12 +4,26 @@
     // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
-    
-    {"name":"Python: Current File","type":"python","request":"launch","program":"${file}","console":"integratedTerminal"},
-        
-
-
- 
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - oop",
+            "request": "launch",
+            "mainClass": "oop"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - oop",
+            "request": "launch",
+            "mainClass": "java_oop_practice.oop",
+            "projectName": "Gitty01_db8dc79d"
+        },
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal"
+        },
         {
             "name": "(Windows) Launch",
             "type": "cppvsdbg",
